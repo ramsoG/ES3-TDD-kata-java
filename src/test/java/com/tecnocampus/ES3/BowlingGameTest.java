@@ -26,8 +26,7 @@ public class BowlingGameTest {
 
     @Test
     public void all_ones() {
-        for (var i = 0; i < 20; i += 1)
-            g.roll(1);
+        rollMany(20,1);
         assertThat(g.score()).isEqualTo(20);
     }
 }
