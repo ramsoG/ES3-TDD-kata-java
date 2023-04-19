@@ -12,10 +12,6 @@ public class BowlingGameTest {
     }
 
     @Test
-    public void create_game() {
-    }
-
-    @Test
     public void roll_a_ball(){
         g.roll(0);
     }
