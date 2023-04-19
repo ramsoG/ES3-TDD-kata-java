@@ -27,8 +27,7 @@ public class BowlingGameTest {
 
     @Test
     public void one_spare() {
-        g.roll(5);
-        g.roll(5); // spare
+        rollSpare();
         g.roll(3);
         rollMany(17, 0);
         assertThat(g.score()).isEqualTo(16);
@@ -37,5 +36,10 @@ public class BowlingGameTest {
     private void rollMany(int rolls, int pins) {
         for (var i = 0; i < rolls; i += 1)
             g.roll(pins);
+    }
+
+    private void rollSpare() {
+        g.roll(5);
+        g.roll(5);
     }
 }
