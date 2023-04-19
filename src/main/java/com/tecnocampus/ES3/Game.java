@@ -19,11 +19,15 @@ public class Game {
                 score += 10 + spareBonus(frameIndex);
                 frameIndex += 2;
             } else {
-                score += rolls[frameIndex] + rolls[frameIndex + 1];
+                score += sumOfBallsInFrame(frameIndex);
                 frameIndex += 2;
             }
         }
         return score;
+    }
+
+    private int sumOfBallsInFrame(int frameIndex) {
+        return rolls[frameIndex] + rolls[frameIndex + 1];
     }
 
     private int spareBonus(int frameIndex) {
