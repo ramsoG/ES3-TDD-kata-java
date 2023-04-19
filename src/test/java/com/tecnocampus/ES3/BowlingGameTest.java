@@ -14,8 +14,11 @@ public class BowlingGameTest {
     }
 
     @Test
-    public void gutter_game(){
-        for (var i = 0; i<20; i+=1) g.roll(0);
+    public void gutter_game() {
+        var rolls = 20;
+        var pins = 0;
+        for (var i = 0; i < rolls; i += 1)
+            g.roll(pins);
         assertThat(g.score()).isEqualTo(0);
     }
 
