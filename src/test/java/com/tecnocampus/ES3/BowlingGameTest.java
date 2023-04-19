@@ -43,7 +43,7 @@ public class BowlingGameTest {
 
     @Test public void perfect_game() {
         rollMany(12, 10);
-        assertThat(g.score()).isEqualTo(300);
+        assertThat(g.score()).isEqualTo("fail");
     }
 
     private void rollMany(int rolls, int pins) {
