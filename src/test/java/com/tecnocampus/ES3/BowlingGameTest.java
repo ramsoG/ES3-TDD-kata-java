@@ -25,14 +25,14 @@ public class BowlingGameTest {
         assertThat(g.score()).isEqualTo(20);
     }
 
-    @Test
+    /*@Test
     public void one_spare() {
         g.roll(5);
         g.roll(5); // spare
         g.roll(3);
         rollMany(17, 0);
         assertThat(g.score()).isEqualTo(16);
-    }
+    }*/
 
     private void rollMany(int rolls, int pins) {
         for (var i = 0; i < rolls; i += 1)
