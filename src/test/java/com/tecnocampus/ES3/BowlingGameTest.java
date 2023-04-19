@@ -13,7 +13,6 @@ public class BowlingGameTest {
 
     @Test
     public void create_game() {
-        var g = new Game();
     }
 
     @Test
