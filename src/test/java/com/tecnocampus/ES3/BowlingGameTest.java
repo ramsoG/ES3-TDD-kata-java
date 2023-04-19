@@ -15,9 +15,7 @@ public class BowlingGameTest {
 
     @Test
     public void gutter_game() {
-        var rolls = 20;
-        var pins = 0;
-        rollMany(rolls, pins);
+        rollMany(20, 0);
         assertThat(g.score()).isEqualTo(0);
     }
 
