@@ -1,3 +1,4 @@
 Posar correspondència de nom d'usuari de GitHub amb nom real
 
-priera -> Pedro Riera
+ramsoG -> Roger Ramos Fernandez
+AlexHernandezMorales -> Alex Hernandez Morales
