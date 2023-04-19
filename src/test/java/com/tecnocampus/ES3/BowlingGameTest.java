@@ -14,11 +14,6 @@ public class BowlingGameTest {
     }
 
     @Test
-    public void roll_a_ball(){
-        g.roll(0);
-    }
-
-    @Test
     public void gutter_game(){
         for (var i = 0; i<20; i+=1) g.roll(0);
         assertThat(g.score()).isEqualTo(0);
